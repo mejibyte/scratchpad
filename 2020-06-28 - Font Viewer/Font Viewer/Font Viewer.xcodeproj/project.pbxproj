@@ -46,6 +46,7 @@
 		6AAEAD0024A9554100A8D79F /* Font ViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Font ViewerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAEAD0424A9554100A8D79F /* Font_ViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font_ViewerUITests.swift; sourceTree = "<group>"; };
 		6AAEAD0624A9554100A8D79F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AAEAD1324A95F0F00A8D79F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 				6AAEACF824A9554100A8D79F /* Font ViewerTests */,
 				6AAEAD0324A9554100A8D79F /* Font ViewerUITests */,
 				6AAEACE424A9553D00A8D79F /* Products */,
+				6AAEAD1224A95F0E00A8D79F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +101,8 @@
 				6AAEACE624A9553D00A8D79F /* AppDelegate.swift */,
 				6AAEACE824A9553D00A8D79F /* ViewController.swift */,
 				6AAEACEA24A9554100A8D79F /* Assets.xcassets */,
-				6AAEACEC24A9554100A8D79F /* Main.storyboard */,
 				6AAEACEF24A9554100A8D79F /* Info.plist */,
+				6AAEACEC24A9554100A8D79F /* Main.storyboard */,
 				6AAEACF024A9554100A8D79F /* Font_Viewer.entitlements */,
 			);
 			path = "Font Viewer";
@@ -122,6 +124,14 @@
 				6AAEAD0624A9554100A8D79F /* Info.plist */,
 			);
 			path = "Font ViewerUITests";
+			sourceTree = "<group>";
+		};
+		6AAEAD1224A95F0E00A8D79F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AAEAD1324A95F0F00A8D79F /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +437,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "amp.Font-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -445,6 +456,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "amp.Font-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
