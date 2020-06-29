@@ -1,3 +1,6 @@
 [submodule "2020-06-28"]
 	path = 2020-06-28
 	url = git@github.com:appcoda/FontViewer.git
+[submodule "2020-06-28 - Font Viewer - Official"]
+	path = 2020-06-28 - Font Viewer - Official
+	url = git@github.com:appcoda/FontViewer.git
